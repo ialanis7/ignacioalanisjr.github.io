@@ -41,9 +41,17 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
           off-roading in my 4Runner. Anyways, what you came here for is my
           experience which you will find below!
         </p>
-        <!--<ul class="actions">
-               <li><a href="#" class="button">Learn More</a></li>
-               </ul>-->
+        <ul class="actions">
+          <li>
+            <a
+              href="Ignacio Alanis Jr-Resume.pdf"
+              type="button"
+              class="btn btn btn-space btn-lg btn-block"
+            >
+              View & Download Resume
+          </a>
+          </li>
+        </ul>
       </section>
 
       <!-- Section Two -->
@@ -284,6 +292,23 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css
     https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js
     "></script>
 
+    <script >
+      $(document).ready(function(){
+        $('.classifiedContent').click(function () {
+          console.log(2);
+          Swal.fire({
+            customClass: {
+              confirmButton: 'btn btn-danger'
+            },
+          title: 'Sorry!',
+          text: 'I have decided not to upload code to GitHub to respect company privacy. I would be more than happy to show a live demo with code.',
+          cancelButtonText: 'Close',
+          showConfirmButton: false,
+          showCancelButton: true
+          });
+        });
+      });
+    </script>
     <script >
       $(document).ready(function(){
         $('.classifiedContent').click(function () {
